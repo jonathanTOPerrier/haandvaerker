@@ -5,14 +5,15 @@
 // for (let i = 0; i < listByer.length; i++) {
 
 
-// 	let sektionen = document.createElement('article');
+// 	let artiklen = document.createElement('article');
 // 	let titel = document.createElement('h2');
 // 	let titelText = document.createTextNode(listByer[i]);
 // 	titel.appendChild(titelText);
 // 	let element = document.querySelector('main');
-// 	sektionen.appendChild(titel);
-// 	element.appendChild(sektionen);
-// 	let uListe = document.create
+// 	artiklen.appendChild(titel);
+// 	element.appendChild(artiklen);
+// 	let uListe = document.Element('ul');
+//  artiklen.appendChild(uListe);
 
 // }
 
