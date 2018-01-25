@@ -17,6 +17,84 @@
 
 // }
 
+let listByer = ['Hovedstads Området', 'Aarhus', 'Odense', 'Aalborg', 'Esbjerg', 'Randers', 'Kolding', 'Horsens', 'Vejle', 'Roskilde', 'Herning', 'Hørsholm', 'Helsingør', 'Silkeborg', 'Næstved', 'Fredericia', 'Viborg', 'Køge', 'Holstebro', 'Taastrup', 'Slagelse', 'Hillerød', 'Holbæk', 'Sønderborg'];
+let listHaand = ['VVS', 'Tømrer', 'Maler', 'Murer', 'Snedker'];
+let listByerLink = ['Hovedstads_Omraadet', 'Aarhus', 'Odense', 'Aalborg', 'Esbjerg', 'Randers', 'Kolding', 'Horsens', 'Vejle', 'Roskilde', 'Herning', 'Hoersholm', 'Helsingoer', 'Silkeborg', 'Naestved', 'Fredericia', 'Viborg', 'Koege', 'Holstebro', 'Taastrup', 'Slagelse', 'Hilleroed', 'Holbaek', 'Sonderborg'];
+
+
+let element = document.querySelector('main');
+let lavSekt = document.createElement('section');
+lavSekt.setAttribute('class', 'clearfix');
+
+
+for (let i = 0; i < listByer.length; i++) {
+
+
+	if (i % 3 == 0) {
+		console.log('pølse');
+		element.appendChild(lavSekt);
+		lavSekt = document.createElement('section');
+		lavSekt.setAttribute('class', 'clearfix');
+	}
+
+	//laver artiklerne i forhold til mængden af byer
+
+	let sektionen = document.createElement('article');
+	sektionen.setAttribute('class', 'col4');
+
+
+	//laver h2'erne
+
+	let titel = document.createElement('h2');
+
+	//giver h2'eren den tilsvarende titel
+
+	let titelText = document.createTextNode(listByer[i]);
+
+	//apender titlen til h2'en
+
+	titel.appendChild(titelText);
+
+
+	//gemmer h2'eren i artiklen
+
+	sektionen.appendChild(titel);
+
+	//putter artiklen ind i sektionen
+
+
+
+	//laver en un ordered list
+
+	let uListe = document.createElement('ul');
+	uListe.setAttribute('class', 'hidden');
+
+	//laver list items'ne til den UL
+
+	for (let j = 0; j < listHaand.length; j++) {
+
+		let listeItem = document.createElement('li');
+		let linkTag = document.createElement('a');
+		linkTag.setAttribute('href', `/by/${listByerLink[i]}/${listHaand[j]}.html`)
+		let linkTekst = document.createTextNode(listHaand[j]);
+
+		listeItem.appendChild(linkTag);
+		linkTag.appendChild(linkTekst);
+		uListe.appendChild(listeItem);
+
+	}
+
+	//putter den UL ind i Sektionen
+
+	sektionen.appendChild(uListe);
+
+	lavSekt.appendChild(sektionen);
+	console.log(lavSekt);
+}
+
+
+element.appendChild(lavSekt);
+
 
 
 
@@ -34,10 +112,10 @@ for (let i = 0; i < clickeren.length; i++) {
 }
 
 
-function show() {
+function show(e) {
 	let q;
-
-	q = clickliste.indexOf(this);
+	console.log(e);
+	q = clickliste.indexOf(e.target);
 	listen[q].classList.toggle('hidden');
 
 }
