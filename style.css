@@ -17,18 +17,34 @@
 
 header h1{
 	font-size: 48px;
+	color: #fff;
+	position: absolute;
 }
 
 header p{
 	font-style: italic;
 	font-size: 35px;
 	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	position: absolute;
+	bottom: 10px;
+	left: 150px;
 }
 
 header{
+	font-family: 'Anton', sans-serif;
+	margin-bottom: 5em;
+	max-height: 384px;
+}
+
+header div{
+	/* background-image: url('front_img.jpg');
 	padding-top: 2em !important;
 	margin-bottom: 5em !important;
-	font-family: 'Anton', sans-serif;
+	background-size: cover;
+	height: 500px; */
+	position: relative;
+	max-height: 384px;
 }
 
 
@@ -39,13 +55,19 @@ header, footer{
 
 /*Main*/
 
+main p{
+	font-size: 35px;
+	font-weight: bold;
+	margin-bottom: 1.5em !important;
+}
+
 main{
 	font-family: 'Roboto', sans-serif;
 }
 
 h2{
 	text-align: center;
-	font-size: 36px;
+	font-size: 30px;
 	margin-bottom: 0.5em !important;
 	cursor: pointer;
 	z-index: 10;
@@ -61,9 +83,7 @@ li{
 	margin-bottom: 0.5em !important;
 	font-size: 25px;
 	transition: 0.3s linear;
-
 }
-
 .hidden{
 	opacity: 0;
 	transform: scaleY(0);
@@ -72,10 +92,20 @@ li{
 .hidden li{
 	margin: 0px !important;
 	transform: scaleY(0.1);
+	display: none;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover{
+	text-decoration: underline;
 }
 
 article{
-	margin-bottom: 5em;
+	margin-bottom: 8em;
 }
 
 /*Main slut*/

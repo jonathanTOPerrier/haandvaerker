@@ -1,24 +1,7 @@
 // JavaScript Document
-// let listByer = ['København', 'Nordsjælland', 'Århus'];
-// let listHaand = ['VVS',]
-
-// for (let i = 0; i < listByer.length; i++) {
-
-
-// 	let artiklen = document.createElement('article');
-// 	let titel = document.createElement('h2');
-// 	let titelText = document.createTextNode(listByer[i]);
-// 	titel.appendChild(titelText);
-// 	let element = document.querySelector('main');
-// 	artiklen.appendChild(titel);
-// 	element.appendChild(artiklen);
-// 	let uListe = document.Element('ul');
-//  artiklen.appendChild(uListe);
-
-// }
 
 let listByer = ['Hovedstads Området', 'Aarhus', 'Odense', 'Aalborg', 'Esbjerg', 'Randers', 'Kolding', 'Horsens', 'Vejle', 'Roskilde', 'Herning', 'Hørsholm', 'Helsingør', 'Silkeborg', 'Næstved', 'Fredericia', 'Viborg', 'Køge', 'Holstebro', 'Taastrup', 'Slagelse', 'Hillerød', 'Holbæk', 'Sønderborg'];
-let listHaand = ['VVS', 'Tømrer', 'Maler', 'Murer', 'Snedker'];
+let listHaand = ['VVS', 'Tømrer', 'Maler', 'Murer', 'Anlægsgartner', 'Brolægger', 'Elektriker', 'Entrepenør', 'Gulvsliber', 'Isolatør', 'Kloakmester', 'Snedker'];
 let listByerLink = ['Hovedstads_Omraadet', 'Aarhus', 'Odense', 'Aalborg', 'Esbjerg', 'Randers', 'Kolding', 'Horsens', 'Vejle', 'Roskilde', 'Herning', 'Hoersholm', 'Helsingoer', 'Silkeborg', 'Naestved', 'Fredericia', 'Viborg', 'Koege', 'Holstebro', 'Taastrup', 'Slagelse', 'Hilleroed', 'Holbaek', 'Sonderborg'];
 
 
@@ -30,8 +13,7 @@ lavSekt.setAttribute('class', 'clearfix');
 for (let i = 0; i < listByer.length; i++) {
 
 
-	if (i % 3 == 0) {
-		console.log('pølse');
+	if (i % 4 == 0) {
 		element.appendChild(lavSekt);
 		lavSekt = document.createElement('section');
 		lavSekt.setAttribute('class', 'clearfix');
@@ -40,7 +22,7 @@ for (let i = 0; i < listByer.length; i++) {
 	//laver artiklerne i forhold til mængden af byer
 
 	let sektionen = document.createElement('article');
-	sektionen.setAttribute('class', 'col4');
+	sektionen.setAttribute('class', 'col3');
 
 
 	//laver h2'erne
@@ -59,9 +41,6 @@ for (let i = 0; i < listByer.length; i++) {
 	//gemmer h2'eren i artiklen
 
 	sektionen.appendChild(titel);
-
-	//putter artiklen ind i sektionen
-
 
 
 	//laver en un ordered list
