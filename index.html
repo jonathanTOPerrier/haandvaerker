@@ -6,8 +6,7 @@
 	<title>Vores Håndværker</title>
 	<link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -19,6 +18,27 @@
 			<p class="center">- I dit nærområde
 				<br>Vi finder den håndværker med det bedste tilbud tæt på dig</p>
 			<img src="front_img.jpg" alt="front billede">
+			<form id="search">
+				<input type="number" class="col3" maxlength="4">
+				<input list="haand" id="haandvaerkeren" class="col7">
+				<datalist id="haand">
+					<option value="VVS">
+						<option value="Tømrer">
+							<option value="Maler">
+								<option value="Murer">
+									<option value="Anlægsgartner">
+										<option value="Brolægger">
+											<option value="Elektriker">
+												<option value="Entrepenør">
+													<option value="Gulvsliper">
+														<option value="Isolatør">
+															<option value="Kloakmester">
+																<option value="Snedker">
+				</datalist>
+				<button type="button" class="col2">
+					<i class="fa fa-search"></i>
+				</button>
+			</form>
 		</div>
 	</header>
 
@@ -26,6 +46,28 @@
 	<main class="clearfix wrapper">
 
 		<p class="center">Kontakt os på ***** og vi finder de 3 bedste tilbud til dig</p>
+
+		<form id="search2" class="center col8 clearfix">
+			<input type="number" class="col3" maxlength="4" placeholder="Post Nr.:">
+			<input list="haand2" id="haandvaerkeren2" class="col7" placeholder="Håndværker">
+			<datalist id="haand2">
+				<option value="VVS">
+					<option value="Tømrer">
+						<option value="Maler">
+							<option value="Murer">
+								<option value="Anlægsgartner">
+									<option value="Brolægger">
+										<option value="Elektriker">
+											<option value="Entrepenør">
+												<option value="Gulvsliper">
+													<option value="Isolatør">
+														<option value="Kloakmester">
+															<option value="Snedker">
+			</datalist>
+			<button type="button" class="col2">
+				<i class="fa fa-search"></i>
+			</button>
+		</form>
 
 	</main>
 

@@ -19,6 +19,7 @@ header h1{
 	font-size: 48px;
 	color: #fff;
 	position: absolute;
+	margin-left: 1em;
 }
 
 header p{
@@ -35,6 +36,9 @@ header{
 	font-family: 'Anton', sans-serif;
 	margin-bottom: 5em;
 	max-height: 384px;
+}
+header img{
+	height: 100% !important;
 }
 
 header div{
@@ -63,6 +67,7 @@ main p{
 
 main{
 	font-family: 'Roboto', sans-serif;
+	margin-bottom: 2em !important;
 }
 
 h2{
@@ -130,4 +135,23 @@ footer div div h3{
 footer p{
 	text-align: center;
 	font-size: 20px;
+}
+
+#search{
+	position: absolute;
+	top: 55%;
+	left: 30%;
+}
+
+#search input, #search button{
+	padding: 1%;
+	border-radius: 10px;
+	font-size: 18px;
+}
+
+
+#search2 input, #search2 button{
+	padding: 1%;
+	border-radius: 10px;
+	font-size: 18px;
 }
