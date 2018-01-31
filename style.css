@@ -122,10 +122,7 @@ footer h3{
 	font-size: 35px;
 	margin-bottom: 0.5em;
 }
-footer{
-	padding-top:4em; 
-	padding-bottom: 2em;
-}
+
 
 footer div div h3{
 	font-size: 25px;
@@ -154,4 +151,13 @@ footer p{
 	padding: 1%;
 	border-radius: 10px;
 	font-size: 18px;
+}
+
+#footer_bg{
+	background-image: url('footer.jpg');
+	padding-top:10em; 
+	padding-bottom: 10em;
+	background-size: cover;
+	color: #fff;
+	background-repeat: no-repeat;
 }
