@@ -100,3 +100,26 @@
 // }
 
 
+var hider = true;
+var ikon = document.querySelector('#menu_ikon');
+
+ikon.addEventListener('click', () => {
+
+
+
+    var menu = document.querySelector('nav');
+
+    if (hider == true) {
+        ikon.setAttribute('src', 'burger_x.png');
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('color');
+        hider = false;
+    }
+    else {
+        ikon.setAttribute('src', 'burger.png');
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('color');
+        hider = true;
+    }
+
+});

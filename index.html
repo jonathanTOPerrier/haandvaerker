@@ -3,6 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Vores Håndværker</title>
 	<link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -23,27 +25,29 @@
 	</header>
 
 
+
+
 	<main class="clearfix wrapper">
+		<nav class="hidden">
+			<div class="clearfix">
+				<img src="burger.png" id="menu_ikon">
+				<p>Menu</p>
+			</div>
+			<ul>
+				<li>
+					<a href="#">Forside</a>
+				</li>
+				<li>
+					<a href="kontakt.html">Om Os</a>
+				</li>
+			</ul>
+		</nav>
 
 		<p class="center">Kontakt os på ***** og vi finder de 3 bedste tilbud til dig</p>
 
 		<form id="search2" class="center col8 clearfix">
 			<input type="number" class="col3" maxlength="4" placeholder="Post Nr.:">
 			<input list="haand2" id="haandvaerkeren2" class="col7" placeholder="Håndværker">
-			<datalist id="haand2">
-				<option value="VVS">
-					<option value="Tømrer">
-						<option value="Maler">
-							<option value="Murer">
-								<option value="Anlægsgartner">
-									<option value="Brolægger">
-										<option value="Elektriker">
-											<option value="Entrepenør">
-												<option value="Gulvsliper">
-													<option value="Isolatør">
-														<option value="Kloakmester">
-															<option value="Snedker">
-			</datalist>
 			<button type="button" class="col2">
 				<i class="fa fa-search"></i>
 			</button>
