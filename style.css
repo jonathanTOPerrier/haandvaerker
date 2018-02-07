@@ -57,10 +57,11 @@ nav{
 	position: fixed;
 	top: 50px;
 	right: 0px;
-	width: 10%;
+	width: 20%;
 	transition: 0.5s linear;
 	border-radius: 10px 0px 0px 10px;
 	z-index: 10;
+	color: #FFF;
 }
 
 .color{
@@ -70,22 +71,23 @@ nav{
 nav div{
 	border-radius: 25px 0px 0px 25px;
 	background-color: #07689c;
+	padding: 1%;
 
 }
 
 nav img{
-	width: 40%;
+	width: 20%;
 	float: left;
-	padding: 5%;
+	padding: 1%;
 	cursor: pointer;
 }
 
 nav p{
-	float: right;
 	margin-top: 0.25em;
 	font-size: 30px !important;
-	margin-right: 2%;
-	margin-bottom: 0px !important;
+	margin-left: 2%;
+	padding-bottom: 0px !important;
+	padding-top: 0.25em ;
 }
 
 nav ul{
@@ -93,19 +95,21 @@ nav ul{
 	background-color: #07689c;
 	padding: 5%;
 	transition: 0.5s ease-out;
+	
 }
 
 .hidden{
+	transform: translateX(125px);
 	background-color: none !important;
 }
 
 .hidden ul{
-	transform: translateX(300px);
+	transform: translateX(400px);
 }
 
 a{
 	text-decoration: none;
-	color: #000;
+	color: #fff;
 }
 li{
 	margin-bottom: 0.5em !important;
@@ -113,6 +117,11 @@ li{
 	transition: 0.3s linear;
 	list-style: none;
 	text-align: end;
+	
+}
+li a{
+	width: 100%;
+	display: block;
 }
 
 a:hover{
@@ -125,7 +134,6 @@ a:hover{
 main p{
 	font-size: 35px;
 	font-weight: bold;
-	/* margin-bottom: 1.5em !important; */
 }
 
 main{
@@ -154,17 +162,6 @@ footer p{
 	font-size: 20px;
 }
 
-#search{
-	position: absolute;
-	top: 55%;
-	left: 30%;
-}
-
-#search input, #search button{
-	padding: 1%;
-	border-radius: 10px;
-	font-size: 18px;
-}
 
 
 #search2 input, #search2 button{
@@ -193,11 +190,19 @@ h2{
 	font-size: 45px;
 	text-align: center;
 }
+.underside h3{
+	font-size: 40px;
+	text-align: center;
+}
 
 .underside p{
 	font-size: 25px !important;
 	line-height: 2em;
-	text-align: center;
+	text-align: left;
+}
+
+.underside a{
+	color: #000 !important;
 }
 
 .underside sektion{
