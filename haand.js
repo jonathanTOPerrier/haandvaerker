@@ -112,14 +112,14 @@ ikon.addEventListener('click', () => {
     if (hider == true) {
         ikon.setAttribute('src', './img/burger_x.png');
         menu.classList.toggle('hidden');
-        menu.classList.toggle('color');
+        menu.classList.toggle('culor');
         hider = false;
     }
     else {
         ikon.setAttribute('src', './img/burger.png');
         menu.classList.toggle('hidden');
-        menu.classList.toggle('color');
+        menu.classList.toggle('culor');
         hider = true;
     }
 
-});
+})
